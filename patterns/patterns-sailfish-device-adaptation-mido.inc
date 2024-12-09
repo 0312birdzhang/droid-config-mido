@@ -33,6 +33,11 @@ Requires: audiosystem-passthrough-dummy-af
 # for audio recording to work:
 Requires: qt5-qtmultimedia-plugin-mediaservice-gstmediacapture
 
+
+# for ofono
+Requires: ofono-ril-plugin
+Conflicts: ofono-ril-binder-plugin
+
 # These need to be per-device due to differing backends (fbdev, eglfs, hwc, ..?)
 Requires: qt5-qtwayland-wayland_egl
 Requires: qt5-qpa-hwcomposer-plugin
@@ -83,7 +88,7 @@ Requires: jolla-mediaplayer-radio
 Requires: jolla-settings-system-flashlight
 
 # Additional packages
-Requires: camera-settings-plugin
+# Requires: camera-settings-plugin
 Requires: sd-utils
 
 %description -n patterns-sailfish-device-adaptation-mido
