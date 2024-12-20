@@ -6,12 +6,13 @@ Requires: patterns-sailfish-device-adaptation-mido
 Requires: patterns-sailfish-cellular-apps
 # Early stages of porting benefit from these:
 Requires: patterns-sailfish-dev-tools
-Requires: patterns-sailfish-rnd
+#Requires: patterns-sailfish-rnd
 Requires: libhybris-tests
 Requires: busybox-static
 Requires: openssh-server
 Requires: zypper
 Requires: sailfish-content-graphics-z%{icon_res}
+Recommends: libhybris-tests
 
 # For multi-SIM devices
 Requires: jolla-settings-networking-multisim
